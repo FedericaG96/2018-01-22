@@ -7,7 +7,7 @@ import com.zaxxer.hikari.HikariDataSource;
 
 public class DBConnect {
 
-	private static final String jdbcURL = "jdbc:mysql://localhost/serie_a?serverTimezone=UTC";
+	private static final String jdbcURL = "jdbc:mysql://localhost/serie_a?useTimezone=true&serverTimezone=UTC";
 	private static HikariDataSource ds;
 
 	public static Connection getConnection() {
@@ -18,7 +18,7 @@ public class DBConnect {
 
 			ds.setJdbcUrl(jdbcURL);
 			ds.setUsername("root");
-			ds.setPassword("root");
+			ds.setPassword("Federi22!");
 
 			// configurazione MySQL
 			ds.addDataSourceProperty("cachePrepStmts", "true");
